@@ -43,6 +43,8 @@ function makePersonObject(id, name, email) {
   return{ id, name, email};
 }
 
+console.log(makePersonObject(3, 'Joe Smith', 'joesmith@gmail.com'));
+
 /**
  * ### Challenge `getName`
  * 
