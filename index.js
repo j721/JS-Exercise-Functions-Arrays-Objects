@@ -81,11 +81,10 @@ function getName(person) {
 function makeSmartPerson(name) {
   return{
     name: name, 
+    sum(num1, num2) {return num1 +num2;},
+    speak(){return 'Hello, my name is'+ name;}
   }
 }
-
-
-
 
 
 /*
