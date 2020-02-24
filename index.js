@@ -40,11 +40,12 @@ function addNumbers(num1, num2) {
  * }
 */
 function makePersonObject(id, name, email) {
-  return { 
+  const person = { 
     id: id, 
     name: name, 
     email: email,
   };
+  return person;
 }
 
 
@@ -56,12 +57,13 @@ and return a string that reads `Hello, my name is {name}`,
 where `{name}` is the name stored in the object.
 
 For example, if we invoke `getName`
-passing { id: 1, name: 'Leia', email: 'leia
- * @leia .com` } as the argument,
+passing { id: 1, name: 'Leia', email: 'leia@leia .com` } as the argument,
 the returned value should look like `Hello, my name is Leia`.
  */
+
 function getName(person) {
-  return 'Hello, my name is' + person.name;
+  const name = person.name;
+  return 'Hello, my name is' + name;
 }
 
 
@@ -174,8 +176,8 @@ function getLastCarInfo(inventory) {
  * For example, if getCarInfoById is invoked with the inventory and the number 1,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoById(/* code here */) {
-  /* code here */
+function getCarInfoById(inventory, carID) {
+  return `This is a ${inventory[carID - 1].car_make} ${inventory[carID - 1].car_model}`;
 }
 
 /**
@@ -186,8 +188,8 @@ function getCarInfoById(/* code here */) {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * sortCarInventory returns an inventory that is sorted by car_model, ascending [A-Z].
 */
-function sortCarInventory(/* code here */) {
-  /* code here */
+function sortCarInventory(inventory) {
+ 
 }
 
 /**
