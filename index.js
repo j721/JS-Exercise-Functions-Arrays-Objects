@@ -160,7 +160,8 @@ function getCarInfoByIndex(inventory, index) {
  * it will return `This is a Lincoln Town Car`.
 */
 function getLastCarInfo(inventory) {
-  return `This is a ${inventory[inventory.length-1].car_make} ${inventory[inventory.length-1].car_model}`;
+  let car = inventory[inventory.length-1];
+  return `This is a ${car.car_make} ${car.car_model}`;
 }
 
 
