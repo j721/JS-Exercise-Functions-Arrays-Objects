@@ -63,7 +63,7 @@ the returned value should look like `Hello, my name is Leia`.
 
 function getName(person) {
   const name = person.name;
-  return 'Hello, my name is' + name;
+  return 'Hello, my name is ' + name;
 }
 
 
