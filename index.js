@@ -172,14 +172,15 @@ function getLastCarInfo(inventory) {
  * @instructions
  * getCarInfoById takes two arguments:
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
- *     (2) a number which is the desired car id (see how each car has its own unique id).
+ *     (2) a number which is  desired car id (see how each car has its own unique id).
  * getCarInfoById returns a string in the format `This is a {car_make} {car_model}
  * 
  * For example, if getCarInfoById is invoked with the inventory and the number 1,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoById(inventory, carID) {
-  return `This is a ${inventory[carID - 1].car_make} ${inventory[carID - 1].car_model}`;
+function getCarInfoById(inventory, carId) {
+  let car = inventory[carId-1];
+  return `This is a ${car.car_make} ${car.car_model}`;
 }
 
 /**
