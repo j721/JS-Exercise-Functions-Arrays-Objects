@@ -193,15 +193,13 @@ function getCarInfoById(inventory, carId) {
 */
 function sortCarInventory(inventory) {
   inventory.sort(function (a, b) {
-    var nameA = a.car_model; // ignore upper and lowercase
-    var nameB = b.car_model; // ignore upper and lowercase
-    if (nameA < nameB) {
+    if (a.car_model < b.car_model) {
       return -1;
     }
-    if (nameA > nameB) {
+    if (a.car_model > b.car_model) {
       return 1;
     }
-    // names must be equal
+    // names are equal 
     return 0;
   });
   return inventory;
