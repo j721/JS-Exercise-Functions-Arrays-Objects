@@ -40,13 +40,16 @@ function addNumbers(num1, num2) {
  * }
 */
 function makePersonObject(id, name, email) {
-  const person = { 
-    id: id, 
-    name: name, 
-    email: email,
-  };
-  return person;
+  // const person = { 
+  //   id: id, 
+  //   name: name, 
+  //   email: email,
+  // };
+  // return person;  person is an object
+  return {
+    id, name, email}
 }
+
 
 
 /**
@@ -63,7 +66,9 @@ the returned value should look like `Hello, my name is Leia`.
 
 function getName(person) {
   const name = person.name;
-  return 'Hello, my name is ' + name;
+  // return 'Hello, my name is ' + name;
+return `Hello, my name is ${name}`
+
 }
 
 
